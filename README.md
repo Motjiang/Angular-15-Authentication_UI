@@ -1,4 +1,4 @@
-# Angular 15 Authentication with JSON-SERVER API
+# Angular 16 Authentication with JSON-SERVER API
 
 This project demonstrates user registration, login, and role-based authentication using Angular 16.0.2. It includes an admin panel for managing user roles, as well as basic user functionalities. Built with Angular Material UI for styling and ngx-toastr for toast notifications.
 
