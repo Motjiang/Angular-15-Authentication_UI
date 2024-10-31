@@ -8,7 +8,7 @@ import { UserlistingComponent } from './userlisting/userlisting.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component: HomeComponent
   },
   {
     path: 'register',
