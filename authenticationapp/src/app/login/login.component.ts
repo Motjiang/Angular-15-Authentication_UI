@@ -31,8 +31,13 @@ export class LoginComponent {
         .subscribe((res) => {
           this.userdata = res;
           if (this.userdata.password == this.loginForm.value.password) {
-            this.toastr.success('Login Success');
+            if(this.userdata.isactive){
+              sessionStorage.setItem('username', this.userdata.id);
+              sessionStorage.setItem('userrole', this.userdata.role);
             this.router.navigate(['']);
+            }else{
+              this.toastr.error('Wait for the administrator to enable Access.','In Active User');
+            }            
           } else {
             this.toastr.error('Invalid Credentials');
           }
