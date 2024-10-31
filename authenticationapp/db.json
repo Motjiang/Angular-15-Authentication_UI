@@ -8,6 +8,60 @@
       "gender": "male",
       "role": "admin",
       "isactive": true
+    },
+    {
+      "id": "user1",
+      "name": "John Doe",
+      "password": "JohnDoe123!",
+      "email": "johndoe@example.com",
+      "gender": "male",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "user2",
+      "name": "Jane Smith",
+      "password": "JaneS!@#456",
+      "email": "janesmith@example.com",
+      "gender": "female",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "user3",
+      "name": "Alice Johnson",
+      "password": "Alice#789",
+      "email": "alicejohnson@example.com",
+      "gender": "female",
+      "role": "user",
+      "isactive": false
+    },
+    {
+      "id": "user4",
+      "name": "Michael Brown",
+      "password": "Michael*321",
+      "email": "michaelbrown@example.com",
+      "gender": "male",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "user5",
+      "name": "Emily White",
+      "password": "Emily$987",
+      "email": "emilywhite@example.com",
+      "gender": "female",
+      "role": "",
+      "isactive": false
+    },
+    {
+      "id": "user6",
+      "name": "David Lee",
+      "password": "David@123!",
+      "email": "davidlee@example.com",
+      "gender": "male",
+      "role": "user",
+      "isactive": false
     }
   ]
 }
