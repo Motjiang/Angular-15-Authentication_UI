@@ -21,7 +21,7 @@ const routes: Routes = [
   },
   {
     path: 'user', 
-    component: UserlistingComponent
+    component: UserlistingComponent, canActivate: [AuthGuard]
   }
 ];
 
