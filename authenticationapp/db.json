@@ -1,5 +1,13 @@
 {
-    "user": [
-       
-    ]
-} 
+  "user": [
+    {
+      "id": "admin",
+      "name": "Brilliant Nhlamolo Motjiang",
+      "password": "Brilliant$@12",
+      "email": "motjiangbrilliant@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true
+    }
+  ]
+}

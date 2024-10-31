@@ -1,10 +1,42 @@
 import { Component } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
+import { AuthService } from '../service/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
+  constructor(
+    private builder: FormBuilder,
+    private toastr: ToastrService,
+    private service: AuthService,
+    private router: Router
+  ) {}
+  //user variable
+  userdata: any;
 
+  loginForm = this.builder.group({
+    username: this.builder.control('', Validators.required),
+    password: this.builder.control('', Validators.required),
+  });
+
+  proceedlogin() {
+    if (this.loginForm.valid) {
+      this.service
+        .GetUserById(this.loginForm.value.username)
+        .subscribe((res) => {
+          this.userdata = res;
+          if (this.userdata.password == this.loginForm.value.password) {
+            this.toastr.success('Login Success');
+            this.router.navigate(['']);
+          } else {
+            this.toastr.error('Invalid Credentials');
+          }
+        });
+    }
+  }
 }
