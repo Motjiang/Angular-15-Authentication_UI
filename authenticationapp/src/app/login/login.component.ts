@@ -15,7 +15,9 @@ export class LoginComponent {
     private toastr: ToastrService,
     private service: AuthService,
     private router: Router
-  ) {}
+  ) {
+    sessionStorage.clear();
+  }
   //user variable
   userdata: any;
 
