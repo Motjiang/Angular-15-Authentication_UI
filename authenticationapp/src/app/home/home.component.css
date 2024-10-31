@@ -1,0 +1,77 @@
+/* General styling */
+.home-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Welcome Banner Styling */
+  .welcome-banner {
+    background: linear-gradient(135deg, #4a90e2, #007bff);
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .welcome-banner h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .welcome-banner p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  /* Hero Section Styling */
+  .hero-section {
+    background: url('/assets/authentication-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .hero-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Project Description Styling */
+  .project-description {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 2rem 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  

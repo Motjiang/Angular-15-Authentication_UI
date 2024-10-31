@@ -7,21 +7,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements DoCheck {
-
+  
   title = 'authenticationapp';
   ismenurequired = false;
+  username: string | null = '';
 
-  constructor(private router: Router) { 
-
-  }
+  constructor(private router: Router) { }
 
   ngDoCheck(): void {
-    let url = this.router.url;
+    // Check if menu should be displayed based on route
+    const url = this.router.url;
+    this.ismenurequired = !(url === '/login' || url === '/register');
 
-    if (url == '/login' || url == '/register') {
-      this.ismenurequired = false;
-    } else {
-      this.ismenurequired = true;
-    }
+    // Fetch username from localStorage to display current logged-in user
+    this.username = sessionStorage.getItem('username');
   }
 }

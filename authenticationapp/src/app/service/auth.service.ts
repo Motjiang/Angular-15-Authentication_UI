@@ -11,9 +11,14 @@ export class AuthService {
    }
 
    apiurl = 'http://localhost:3000/user';
+   api_roleApi = 'http://localhost:3000/role';
 
    GetAllUsers(){
      return this.http.get(this.apiurl);
+   }
+
+   GetAllRoles(){
+      return this.http.get(this.api_roleApi);
    }
 
    GetUserById(code:any){
@@ -24,9 +29,9 @@ export class AuthService {
      return this.http.post(this.apiurl,data);
    }
 
-    UpdateUser(code:any,data:any){
-      return this.http.put(this.apiurl+'/'+code,data);
-    }
+   updateuser(id:any,inputdata:any){
+    return this.http.put(this.apiurl+'/'+id,inputdata);
+  }
 
     IsloggedIn(){
       return sessionStorage.getItem('username') != null;
